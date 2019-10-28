@@ -12,34 +12,37 @@
 <body>
     <h1>Hello World2!</h1>
     <script>
-        // QUESTION 1 - NAME OF USER [DONE]
+        // ALL QUESTIONS THAT CAN BE CHANGED
         var userQuestion = "Enter the name of an outrageous personality?";
+        var ChooseSideQuestion = "What side are you on? (e.g. Dark Side, Light Side, Blue Team, Political Party, Something Really Random, etc...";
+        var jediMasterQuestion = "Who is the greatest Jedi?";
+        var fightLocationQuestion = "Where would you prefer to fight your battles? (In or On .........";
+        var cuteAnimalQuestion = "What is the cutest animal you can think of?"
+
+        // DO NOT CHANGE THIS CODE
+        // QUESTION 1 - NAME OF USER [DONE]
         var user = prompt(userQuestion);
         console.log("I asked " + user + ", " + userQuestion + " and " + user + " answered, '" + user + "'.");
 
         // QUESTION 2 - CHOOSE YOUR SIDE [DONE]
-        var ChooseSideQuestion = "What side are you on? (e.g. Dark Side, Light Side, Blue Team, Political Party, Something Really Random, etc...";
         var ChooseSidePromptAnswer = prompt(ChooseSideQuestion);
         var ChooseSideReply = user + ", The " + ChooseSidePromptAnswer + ", is... acceptable...";
         var ChooseSideReplyAlert = alert(ChooseSideReply);
         console.log("I asked " + user + ", " + ChooseSideQuestion + " and " + user + " answered, '" + ChooseSidePromptAnswer + "'. My reply was, '" + ChooseSideReply + "'");
 
         //QUESTION 3 - GREATEST JEDI [DONE]
-        var jediMasterQuestion = "Who is the greatest Jedi?";
         var jediMasterPromptAnswer = prompt(jediMasterQuestion);
         var jediMasterReply = user + ", even though you claim that you are in or on the " + ChooseSidePromptAnswer + ", choosing " + jediMasterPromptAnswer + ", is a bit too much...";
         var jediMasterReplyAlert = alert(jediMasterReply);
         console.log("I asked " + user + ", " + jediMasterQuestion + " and " + user + " answered, '" + jediMasterPromptAnswer + "'. My reply was, '" + jediMasterReply + "'");
 
         // QUESTION 4 - FIGHTING LOCATION [DONE]
-        var fightLocationQuestion = "Where would you prefer to fight your battles? (In or On .........";
         var fightLocationPromptAnswer = prompt(fightLocationQuestion);
         var fightLocationReply = user + ", everyone in or on The " + ChooseSidePromptAnswer + " and your Master, " + jediMasterPromptAnswer + ", would probably not approve of you fighting in or on " + fightLocationPromptAnswer + ", tbh... because you might get hurt"
         var fightLocationAlert = alert(fightLocationReply);
         console.log("I asked " + user + ", " + fightLocationQuestion + " and " + user + " answered, '" + fightLocationPromptAnswer + "'. My reply was, '" + fightLocationReply + "'");
 
         // QUESTION 5 - CUTEST ANIMAL DISS/CONCLUSION
-        var cuteAnimalQuestion = "What is the cutest animal you can think of?"
         var cuteAnimalPromptAnswer = prompt(cuteAnimalQuestion);
         var cuteAnimalReply = user + ", I'm so glad you said that, because... " + jediMasterPromptAnswer + " could not defeat a " + cuteAnimalPromptAnswer + " in or on " + fightLocationPromptAnswer + " because " + jediMasterPromptAnswer + " belongs to The " + ChooseSidePromptAnswer + ", unfortunately... Sorry to break it to you...";
         var cuteAnimalAlert = alert(cuteAnimalReply);
